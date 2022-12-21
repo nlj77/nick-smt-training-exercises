@@ -9,3 +9,6 @@ gradle/
 bin/
 .DS_Store
 .attach*
+.gitattributes
+gradlew.bat
+settings.gradle
