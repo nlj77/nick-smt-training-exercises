@@ -34,21 +34,16 @@ public class People {
 	}
 
 	public static People[] peopleGenerator() {
-		People[] peopleGroup = new People [5];
-		People person1 = new People(1,"Nick", "Jones");
+		People person1 = new People(1, "Nick", "Jones");
 		People person2 = new People(5, "James", "Camire");
 		People person3 = new People(2, "Chris", "Scarola");
 		People person4 = new People(3, "Chris", "Johnson");
 		People person5 = new People(4, "Tim", "Johnson");
-		
-		peopleGroup[0] = person1;
-		peopleGroup[1] = person2;
-		peopleGroup[2] = person3;
-		peopleGroup[3] = person4;
-		peopleGroup[4] = person5;
-		
+
+		People[] peopleGroup = { person1, person2, person3, person4, person5 };
+
 		return peopleGroup;
-			
+
 	}
 
 	public void addPeopleToList(List x, People y) {
