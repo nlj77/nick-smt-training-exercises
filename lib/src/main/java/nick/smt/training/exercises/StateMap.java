@@ -17,9 +17,9 @@ import java.util.HashMap; // import the HashMap class
  * @updates:
  ****************************************************************************/
 public class StateMap {
-	/**
-	 * @param args main runner for my StateMap class
-	 */
+
+	// @param args main runner for my StateMap class
+
 	public static void main(String[] args) {
 		// Creates a HashMap object called States and assigns it to a 50 length Hashmap
 		// of key value pairs
@@ -42,28 +42,25 @@ public class StateMap {
 		orderedMap.descendingMap();
 
 	}
-	
-	/*
-	 * creates a class method that takes a map, and iterates through it, printing the keys and values
-	 */
+
+	// creates a class method that takes a map, and iterates through it, printing
+	// the keys and values
+
 	public static void iterateUsingEntrySet(Map<Integer, String> map) {
 		for (Map.Entry<Integer, String> entry : map.entrySet()) {
 			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
 	}
 
-	/*
-	 * this function takes a hashmap and orders it
-	 */
+	// this function takes a hashmap and orders it
+
 	public static TreeMap orderMap(HashMap x) {
 		TreeMap sortedMap = new TreeMap(x);
 		return sortedMap;
 	}
 
-	/**
-	 * @param x is a Hashmap that accepts a String, and String, set for a key value
-	 * 
-	 */
+	// @param x is a Hashmap that accepts a String, and String, set for a key value
+
 	public static void addStates(HashMap<Integer, String> x) {
 		x.put(1, "Alabama");
 		x.put(2, "Alaska");
