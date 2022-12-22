@@ -23,7 +23,7 @@ public class People {
 	private String lastName;
 
 	public static void main(String[] args) {
-		List<People> listOfPeople = new ArrayList<People>();
+		List<People> listOfPeople = peopleGenerator();
 
 	}
 
