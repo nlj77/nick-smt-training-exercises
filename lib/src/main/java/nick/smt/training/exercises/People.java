@@ -1,5 +1,6 @@
 package nick.smt.training.exercises;
 
+import java.lang.reflect.Array;
 import java.util.*; //Needed for List class, inherits from Collection
 
 
@@ -33,21 +34,22 @@ public class People {
 		lastName = name2;
 	}
 
-	public static People[] peopleGenerator() {
+	public static List<People> peopleGenerator() {
+		List<People> peopleGroup = new ArrayList<>();
 		People person1 = new People(1, "Nick", "Jones");
 		People person2 = new People(5, "James", "Camire");
 		People person3 = new People(2, "Chris", "Scarola");
 		People person4 = new People(3, "Chris", "Johnson");
 		People person5 = new People(4, "Tim", "Johnson");
 
-		People[] peopleGroup = { person1, person2, person3, person4, person5 };
+		People[] peopleGroupArray = { person1, person2, person3, person4, person5 };
+
+		for (People p : peopleGroupArray) {
+			peopleGroup.add(p);
+		}
 
 		return peopleGroup;
 
 	}
 
-	public void addPeopleToList(List x, People y) {
-		x.add(y);
-
-	}
 }
