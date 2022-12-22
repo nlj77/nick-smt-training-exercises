@@ -1,5 +1,6 @@
 /**
  * JDK 11
+ * JRE 1.5 
  */
 package nick.smt.training.exercises;
 import java.util.*; // import the TreeMap class
