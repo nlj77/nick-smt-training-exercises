@@ -24,6 +24,8 @@ public class People {
 
 	public static void main(String[] args) {
 		List<People> listOfPeople = peopleGenerator();
+		
+		listOfPeople.forEach(System.out::println);
 
 	}
 
@@ -50,6 +52,10 @@ public class People {
 
 		return peopleGroup;
 
+	}
+	
+	public static void shuffleList(ArrayList x) {
+		Collections.shuffle(x);
 	}
 
 }
