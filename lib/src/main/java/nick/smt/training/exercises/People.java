@@ -1,3 +1,8 @@
+/**
+ * JDK 11
+ * JRE 1.8 
+ */
+
 package nick.smt.training.exercises;
 
 import java.lang.reflect.Array;
@@ -7,7 +12,7 @@ import java.util.*; //Needed for List class, inherits from Collection
 /****************************************************************************
  * <b>Title:</b> People.java
  * <b>Project:</b> lib
- * <b>Description:</b> 
+ * <b>Description:</b> This is the homework for the Intro to Programming 4 presentation
  * <b>Copyright:</b> Copyright (c) 2022
  * <b>Company:</b> Silicon Mountain Technologies
  * 
