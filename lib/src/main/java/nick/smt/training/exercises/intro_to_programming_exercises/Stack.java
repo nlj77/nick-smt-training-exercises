@@ -1,7 +1,7 @@
 /**
  * 
  */
-package nick.smt.training.exercises;
+package nick.smt.training.exercises.intro_to_programming_exercises;
 /*
  * Vector requires java.util.* package
  */

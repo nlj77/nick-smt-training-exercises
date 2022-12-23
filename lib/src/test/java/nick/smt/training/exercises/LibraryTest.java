@@ -4,6 +4,9 @@
 package nick.smt.training.exercises;
 
 import org.junit.jupiter.api.Test;
+
+import nick.smt.training.exercises.intro_to_programming_exercises.Library;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {

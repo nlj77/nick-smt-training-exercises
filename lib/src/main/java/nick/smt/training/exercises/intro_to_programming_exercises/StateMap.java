@@ -2,7 +2,7 @@
  * JDK 11
  * JRE 1.5 
  */
-package nick.smt.training.exercises;
+package nick.smt.training.exercises.intro_to_programming_exercises;
 import java.util.*; // import the TreeMap class
 import java.util.HashMap; // import the HashMap class
 /****************************************************************************
@@ -31,12 +31,14 @@ public class StateMap {
 		addStates(States);
 
 		// prints the values, and keys of States Hashmap
-		System.out.println(States.values());
-		System.out.println(States.keySet());
+//		System.out.println(States.values());
+//		System.out.println(States.keySet());
 
 		TreeMap orderedMap = orderMap(States);
 
 		iterateUsingEntrySet(States);
+		
+		System.out.println("--------------------------------------");
 
 		iterateUsingEntrySet(orderedMap);
 

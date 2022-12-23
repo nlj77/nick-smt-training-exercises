@@ -3,7 +3,7 @@
  * JRE 1.8 
  */
 
-package nick.smt.training.exercises;
+package nick.smt.training.exercises.intro_to_programming_exercises;
 
 import java.lang.reflect.Array;
 import java.util.*; //Needed for List class, inherits from Collection
