@@ -16,16 +16,25 @@ import java.util.*; //Needed for List class, inherits from Collection
  * @since Dec 22 2022
  * @updates:
  ****************************************************************************/
+//create a People class with @params personID, firstName, and lastName set to private
 public class People {
 
 	private int personID;
 	private String firstName;
 	private String lastName;
-
+	
+	
+	 
+	 // @param args main class runner
+	 
 	public static void main(String[] args) {
 		List<People> listOfPeople = peopleGenerator();
-		
-		listOfPeople.forEach(System.out::println);
+
+		printListIDAndNames(listOfPeople);
+
+		System.out.println("--------------------------------");
+
+		shuffleList(listOfPeople);
 
 	}
 
@@ -34,6 +43,22 @@ public class People {
 		personID = id;
 		firstName = name1;
 		lastName = name2;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public Integer getID() {
+		return personID;
+	}
+
+	public String getIDFirstNameLastName() {
+		return personID + " " + firstName + " " + lastName;
 	}
 
 	public static List<People> peopleGenerator() {
@@ -53,9 +78,18 @@ public class People {
 		return peopleGroup;
 
 	}
-	
-	public static void shuffleList(ArrayList x) {
+
+	public static void printListIDAndNames(List<People> x) {
+		for (int i = 0; i < x.size(); i++) {
+			System.out.println(x.get(i).getIDFirstNameLastName());
+
+		}
+
+	}
+
+	public static void shuffleList(List x) {
 		Collections.shuffle(x);
+		printListIDAndNames(x);
 	}
 
 }
