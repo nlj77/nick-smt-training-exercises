@@ -31,13 +31,13 @@ public class StateMap {
 		addStates(States);
 
 		// prints the values, and keys of States Hashmap
-//		System.out.println(States.values());
-//		System.out.println(States.keySet());
+		System.out.println(States.values());
+		System.out.println(States.keySet());
 
 		TreeMap orderedMap = orderMap(States);
 
 		iterateUsingEntrySet(States);
-		
+
 		System.out.println("--------------------------------------");
 
 		iterateUsingEntrySet(orderedMap);
