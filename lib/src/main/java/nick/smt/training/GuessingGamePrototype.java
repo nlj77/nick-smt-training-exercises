@@ -5,7 +5,6 @@ JDK 11 and JRE 1.8
 package nick.smt.training;
 
 import java.util.Random;
-
 import java.util.Scanner;
 
 /****************************************************************************
@@ -32,28 +31,27 @@ public class GuessingGamePrototype {
 
 		boolean win = false;
 
-		while (win = false) {
+		while (win == false) {
 			System.out.println("Guess a number between 1 and 1000");
 			guess = input.nextInt();
+			numberOfTries++;
+
 			if (guess == numberToGuess) {
 				win = true;
 
-				System.out.println("You got it! It took you " + numberOfTries + " to get it");
+				System.out.println("You got it! It took you " + numberOfTries + " tries to get it");
 			}
 
 			else if (guess < numberToGuess) {
 				System.out.println("Your guess is too low!");
-				System.out.println("Guess again!");
-				guess = input.nextInt();
-
+				System.out.println("                    ");
 			}
 
 			else if (guess > numberToGuess) {
 				System.out.println("Your number was too high!");
-				System.out.println("Guess again!");
-				guess = input.nextInt();
+				System.out.println("                    ");
+
 			}
-			numberOfTries++;
 
 		}
 
