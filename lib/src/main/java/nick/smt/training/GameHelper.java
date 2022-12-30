@@ -1,6 +1,3 @@
-/**
- * JDK 11, JRE 1.8
- */
 package nick.smt.training;
 
 import java.util.Random;
@@ -18,9 +15,9 @@ import java.util.Scanner;
  * @since Dec 28 2022
  * @updates:
  ****************************************************************************/
-public class GuessingGame {
+public class GameHelper {
 
-	public GuessingGame() {
+	public GameHelper() {
 		Random rand = new Random();
 		int numberToGuess = rand.nextInt(1000);
 		int numberOfTries = 0;
