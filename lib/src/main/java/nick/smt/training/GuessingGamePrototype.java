@@ -19,42 +19,16 @@ import java.util.Scanner;
  * @since Dec 23 2022
  * @updates:
  ****************************************************************************/
-//public class GuessingGamePrototype {
-//
-//	public static void main(String[] args) {
-//
-//		Random rand = new Random();
-//		int numberToGuess = rand.nextInt(1000);
-//		int numberOfTries = 0;
-//		Scanner input = new Scanner(System.in);
-//		int guess;
-//
-//		boolean win = false;
-//
-//		while (win == false) {
-//			System.out.println("Guess a number between 1 and 1000");
-//			guess = input.nextInt();
-//			numberOfTries++;
-//
-//			if (guess == numberToGuess) {
-//				win = true;
-//
-//				System.out.println("You got it! It took you " + numberOfTries + " tries to get it");
-//			}
-//
-//			else if (guess < numberToGuess) {
-//				System.out.println("Your guess is too low!");
-//				System.out.println("                    ");
-//			}
-//
-//			else if (guess > numberToGuess) {
-//				System.out.println("Your number was too high!");
-//				System.out.println("                    ");
-//
-//			}
-//
-//		}
-//
-//	}
+public class GuessingGamePrototype {
+
+	public static void main(String[] args) {
+		GameHelper Game = new GameHelper();
+		Game.Greeting();
+		Player newPlayer = new Player();
+		newPlayer.promptUserName();
+
+		Game.gameLoop(newPlayer);
+
+	}
 
 }
